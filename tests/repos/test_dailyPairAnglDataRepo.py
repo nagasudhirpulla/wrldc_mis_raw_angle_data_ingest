@@ -7,8 +7,6 @@ from src.config.appConfig import getConfig
 
 
 class TestDailyPairAnglDataRepo(unittest.TestCase):
-    appConfig = None
-
     def setUp(self):
         self.appConfig = getConfig()
 

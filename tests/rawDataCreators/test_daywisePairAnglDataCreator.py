@@ -5,8 +5,6 @@ from src.config.appConfig import getConfig
 
 
 class TestDaywisePairAnglRawDataCreator(unittest.TestCase):
-    appConfig = None
-
     def setUp(self):
         self.appConfig = getConfig()
 

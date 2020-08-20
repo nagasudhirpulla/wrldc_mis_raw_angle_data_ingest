@@ -25,6 +25,8 @@ def fetchAngleSummaryForDate(anglFolderPath: str, targetDt: dt.datetime) -> List
 
     # read excel sheet named final
     excelDf = pd.read_excel(targetFilePath, 'Final', skiprows=6, skipfooter=1)
+    
+    # remove 1st column from df
     excelDf = excelDf.iloc[:, 1:]
 
     firstTableEndInd = 0
