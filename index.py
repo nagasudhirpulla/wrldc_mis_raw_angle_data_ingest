@@ -25,6 +25,8 @@ args = parser.parse_args()
 startDate = dt.datetime.strptime(args.start_date, '%Y-%m-%d')
 endDate = dt.datetime.strptime(args.end_date, '%Y-%m-%d')
 
+startDate = startDate.replace(hour=0, minute=0, second=0, microsecond=0)
+endDate = endDate.replace(hour=0, minute=0, second=0, microsecond=0)
 print('startDate = {0}, endDate = {1}'.format(dt.datetime.strftime(
     startDate, '%Y-%m-%d'), dt.datetime.strftime(endDate, '%Y-%m-%d')))
 
