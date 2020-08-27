@@ -1,4 +1,5 @@
 data/
+project_env/
 config.xlsx
 __pycache__
 *.py[cod]
