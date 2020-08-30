@@ -10,8 +10,8 @@ from src.config.appConfig import getConfig
 from src.rawDataCreators.daywisePairAnglDataCreator import createPairAnglesRawData
 
 # get start and end dates from command line
-endDate = dt.datetime.now()
-startDate = endDate - dt.timedelta(days=8)
+endDate = dt.datetime.now() - dt.timedelta(days=1)
+startDate = endDate - dt.timedelta(days=3)
 # get an instance of argument parser from argparse module
 parser = argparse.ArgumentParser()
 # setup firstname, lastname arguements
